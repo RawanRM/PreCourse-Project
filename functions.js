@@ -78,10 +78,15 @@ function largestIncrement(numbers) {
  * afterX([1, 2, 3, 4, 5, 6, 7, 8, 9], 3) -> [4, 5, 6, 7, 8, 9]
  * afterX([11, 35, 52, 14, 56, 601, 777, 888, 999], 52) -> [14, 56, 601, 777, 888, 999]
  */
+ let vb = [];
+ let va = 0
 function afterX(numbers, x) {
-  // Your code here
+  va = numbers.indexOf(x);
+  return numbers.splice(va+1,(numbers.length-va));
+  
 }
-// console.log(afterX([1, 2, 3, 4, 5, 6, 7, 8, 9], 3));
+ //console.log(afterX([1, 2, 3, 4, 5, 6, 7, 8, 9], 3));
+
 
 /**
  * abbreviate(firstName, lastName):
@@ -97,7 +102,7 @@ function afterX(numbers, x) {
 function abbreviate(firstName, lastName) {
   
   let fn = firstName.slice(0,1);
-  
+
   let ln = lastName.slice(0,1);
   return fn.toUpperCase()+ln.toUpperCase();
 
