@@ -110,7 +110,9 @@ function abbreviate(firstName, lastName) {
  *
  */
 function isUpperCase(string) {
-  // Your code here
+  if(string.toUpperCase() === string){
+      return true;
+  }else {return false;}
 }
 
 // console.log(isUpperCase("JCREW"));
@@ -126,7 +128,7 @@ function isUpperCase(string) {
  *
  */
 function elementInArray(numbers, x) {
- numbers.forEach(num=> {if(num === x){}})
+ numbers.forEach(num=> {if(num === x){}else if(num !== x){}} )
  return true;
 }
 // console.log(elementInArray([5, 6, 7], 8));
