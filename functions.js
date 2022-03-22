@@ -40,6 +40,7 @@ function sumOdds(numbers) {
  *
  * Hint: You need to turn the string into an array first
  * Another Hint: Use string methods to make it case-insensitive
+ * !!!!!!!!!!!!!!CAN USE FOR LOOP HERE ONLY!!!!!!!!!!!!!!!!!!!!!!!
  */
 function characterCount(string, c) {
   // Your code here
@@ -135,11 +136,20 @@ function isUpperCase(string) {
  * e.g.
  * elementInArray([5, 6, 7], 6) -> true
  * elementInArray([5, 6, 7], 8) -> false
- *
+ * 
+ * var = numbers.indexOf(x);
+ * 
+ * if(numbers[var]=== x){
+ * return true;
+ * else false}
  */
+let avar = 0;
 function elementInArray(numbers, x) {
- numbers.forEach(num=> {if(num === x){}else if(num !== x){}} )
- return true;
+  avar = numbers.indexOf(x);
+  if(numbers[avar]=== x){
+    return true;
+
+  }else {return false;}
 }
 // console.log(elementInArray([5, 6, 7], 8));
 
