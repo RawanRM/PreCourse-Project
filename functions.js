@@ -17,9 +17,14 @@
  * e.g.
  * sumOdds([1, 2, 3, 4, 5, 6, 7, 8, 9]) -> 25
  * sumOdds([3, 7, 8, 15, 2, 1, 13]) -> 39
+ * // access each num and check if it is odd
+ * if odd-> add it to the next odd number 
+ * add the result of addition to the next odd num found until
+ * get all the odd numbers, once u get them, add them all together
+ * done show the result.
  */
 function sumOdds(numbers) {
-  // Your code here
+ const odss = numbers.forEach(num=>{if(num % 2 !== 0){}} )
 }
 // console.log(sumOdds([3, 7, 8, 15, 2, 1, 13]));
 
@@ -121,7 +126,8 @@ function isUpperCase(string) {
  *
  */
 function elementInArray(numbers, x) {
-  // Your code here
+ numbers.forEach(num=> {if(num === x){}})
+ return true;
 }
 // console.log(elementInArray([5, 6, 7], 8));
 
