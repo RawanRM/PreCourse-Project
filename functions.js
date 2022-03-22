@@ -95,7 +95,12 @@ function afterX(numbers, x) {
  * Hint: Use string method .toUpperCase()
  */
 function abbreviate(firstName, lastName) {
-  // Your code here
+  
+  let fn = firstName.slice(0,1);
+  
+  let ln = lastName.slice(0,1);
+  return fn.toUpperCase()+ln.toUpperCase();
+
 }
 // console.log(abbreviate("miss", "Stephane"));
 
